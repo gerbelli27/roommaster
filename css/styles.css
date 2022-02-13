@@ -1,0 +1,182 @@
+/*Mobile browsers*/
+
+html {
+    font-size: 62.5%;
+    /* size set */
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    Font-size: 1.2rem;
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%)
+}
+
+.main-picture {
+    position: relative;
+    max-width: 375px;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    z-index: 1;
+    position: absolute;
+    left: -1000px;
+    /*hide menu*/
+    width: 375px;
+    height: calc(100vh - 110px);
+}
+
+.menu {
+    z-index: 0;
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    width: 20px;
+    height: 14px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    min-height: 110px;
+    width: 100%;
+    background-color: var(--White);
+}
+
+.menu__list--itens {
+    color: var(--Black);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.close {
+    padding-right: 50px;
+}
+
+.glass {
+    height: 100vh;
+    background-color: var(--Black);
+    opacity: 0.4;
+}
+
+.logo {
+    z-index: 0;
+    position: absolute;
+    left: 156.5px;
+    top: 50px;
+    width: 62px;
+    height: 14px;
+}
+
+.container {
+    box-sizing: border-box;
+    min-height: 410px;
+    width: 375px;
+    padding: 70px 15px 15px 30px;
+}
+
+.container__card {
+    box-sizing: border-box;
+    min-height: 315px;
+    width: 375px;
+    padding: 70px 15px 15px 30px;
+}
+
+.card__text {
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.235rem;
+    line-height: 1.6;
+    color: var(--DarkGray);
+    font-weight: 500;
+}
+
+.buy {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+
+.buy__icon {
+    margin-left: 35px;
+    display: inline-block;
+    width: 40px;
+    height: 12px;
+    background-image: url(/images/icon-arrow.svg);
+    background-size: contain;
+}
+
+.button__left {
+    position: absolute;
+    top: 300px;
+    right: 59px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: var(--Black);
+    background-image: url(/images/icon-angle-left.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.button__right {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: var(--Black);
+    background-image: url(/images/icon-angle-right.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.picture__about {
+    display: block;
+    box-sizing: border-box;
+    min-height: 240px;
+    width: 375px;
+    background-image: url(/images/image-about-dark.jpg)
+}
+
+.title__about {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 15px
+}
+
+.picture__footer {
+    display: block;
+    box-sizing: border-box;
+    min-height: 240px;
+    width: 375px;
+    background-image: url(/images/image-about-light.jpg)
+}
