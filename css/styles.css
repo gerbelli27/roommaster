@@ -123,7 +123,7 @@ nav {
     display: inline-block;
     width: 40px;
     height: 12px;
-    background-image: url(/images/icon-arrow.svg);
+    background-image: url(./images/icon-arrow.svg);
     background-size: contain;
 }
 
@@ -135,7 +135,7 @@ nav {
     width: 60px;
     height: 60px;
     background-color: var(--Black);
-    background-image: url(/images/icon-angle-left.svg);
+    background-image: url(./images/icon-angle-left.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 10px;
@@ -150,7 +150,7 @@ nav {
     width: 60px;
     height: 60px;
     background-color: var(--Black);
-    background-image: url(/images/icon-angle-right.svg);
+    background-image: url(./images/icon-angle-right.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 10px;
@@ -162,7 +162,7 @@ nav {
     box-sizing: border-box;
     min-height: 240px;
     width: 375px;
-    background-image: url(/images/image-about-dark.jpg)
+    background-image: url(./images/image-about-dark.jpg)
 }
 
 .title__about {
@@ -178,5 +178,5 @@ nav {
     box-sizing: border-box;
     min-height: 240px;
     width: 375px;
-    background-image: url(/images/image-about-light.jpg)
+    background-image: url(./images/image-about-light.jpg)
 }
