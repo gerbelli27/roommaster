@@ -1,8 +1,6 @@
 /*Mobile browsers*/
-
 html {
     font-size: 62.5%;
-    /* size set */
 }
 
 body {
@@ -12,10 +10,6 @@ body {
     --Black: hsl(0, 0%, 0%);
     --White: hsl(0, 0%, 100%);
     --VeryDarkGray: hsl(0, 0%, 27%);
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%);
 }
 
 .main-picture {
@@ -138,6 +132,7 @@ nav {
 }
 
 .button__left {
+    z-index: 2;
     position: absolute;
     top: 300px;
     right: 60px;
@@ -157,6 +152,7 @@ nav {
 }
 
 .button__right {
+    z-index: 2;
     position: absolute;
     top: 300px;
     right: 0px;
@@ -211,10 +207,9 @@ nav {
 
 @media screen and (min-width: 768px) {
     nav {
-        z-index: 1;
+        z-index: 2;
         position: absolute;
         left: 0;
-        /*hide menu*/
         width: 100%;
         height: calc(100vh - 110px);
     }
