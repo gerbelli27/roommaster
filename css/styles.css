@@ -90,7 +90,7 @@ nav {
     box-sizing: border-box;
     min-height: 410px;
     width: 100%;
-    padding: 70px 15px 15px 30px;
+    padding: 70px 20px 15px 25px;
 }
 
 .container__card {
@@ -148,6 +148,10 @@ nav {
     cursor: pointer;
 }
 
+.button__left:hover{
+    background-color:var(--VeryDarkGray) ;
+}
+
 .button__right {
     position: absolute;
     top: 300px;
@@ -161,6 +165,10 @@ nav {
     background-repeat: no-repeat;
     background-size: 10px;
     cursor: pointer;
+}
+
+.button__right:hover{
+    background-color:var(--VeryDarkGray) ;
 }
 
 .picture__about {
