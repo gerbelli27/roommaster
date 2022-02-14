@@ -92,6 +92,7 @@ nav {
     top: 360px;
     box-sizing: border-box;
     min-height: 410px;
+    max-height: 510px;
     width: 100%;
     padding: 70px 20px 15px 25px;
 }
@@ -99,6 +100,7 @@ nav {
 .container__card {
     box-sizing: border-box;
     min-height: 315px;
+    max-height: 400px;
     padding: 70px 15px 15px 30px;
 }
 
@@ -201,8 +203,53 @@ nav {
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 576px) {
+    .main-picture {
+        background-image: url(../images/desktop-image-hero-1.jpg);
+    }
+}
+
 @media screen and (min-width: 768px) {
-    
+    nav {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        /*hide menu*/
+        width: 100%;
+        height: calc(100vh - 110px);
+    }
+
+    .glass {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu__list {
+        width: 43%;
+        background-color: transparent;
+        margin-left: 110px;
+    }
+
+    .menu__list--itens {
+        color: var(--White);
+    }
+
+    .close {
+        display: none;
+    }
+
+    .logo {
+        left: 10%;
+        margin-right: -90%;
+        transform: translate(-90%);
+        top: 48px;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .main-picture {
         max-width: 60%;
         height: 530px;
@@ -228,7 +275,7 @@ nav {
         right: 0;
         top: 0;
         width: 40%;
-        padding: 100px 80px 20px 95px;
+        padding: 70px 30px 20px 40px;
     }
 
     .title {
@@ -240,7 +287,7 @@ nav {
         margin-bottom: 30px;
     }
 
-    .section__about{
+    .section__about {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -256,9 +303,17 @@ nav {
         justify-self: center;
         align-self: center;
         min-height: 0px;
-        max-height:100% calc(100vh - 530px);
+        max-height: 128px;
         width: 40%;
-        padding: 15px 20px 0px 20px;
+        padding: 5px 5px 0px 5px;
+    }
+
+    .small-txt{
+        line-height: 1.2;
+    }
+
+    .title__about {
+      margin-bottom: 8px;
     }
 
     .picture__footer {
@@ -266,5 +321,45 @@ nav {
         width: 30%;
         background-size: 100% calc(100vh - 530px);
         background-repeat: no-repeat;
+    }
+
+    .logo {
+        left: 15%;
+        margin-right: -85%;
+        transform: translate(-85%);
+        top: 48px;
+    }
+
+    .menu__list {
+        width: 27%;
+        background-color: transparent;
+        margin-left: 110px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu__list {
+        width: 23%;
+        background-color: transparent;
+        margin-left: 150px;
+    }
+
+    .container {
+        right: 0;
+        top: 0;
+        width: 40%;
+        padding: 100px 80px 20px 95px;
+    }
+
+    .container__card {
+        padding: 15px 50px 0px 40px;
+    }
+
+     .small-txt{
+        line-height: 1.6;
+    }
+
+    .title__about {
+      margin-bottom: 15px;
     }
 }
