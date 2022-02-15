@@ -38,7 +38,7 @@ header {
     z-index: 1;
     position: absolute;
     left: 0px;
-    /*hide menu*/
+    /*Show menu*/
     width: 100%;
     height: calc(100vh - 110px);
 }
