@@ -25,10 +25,19 @@ header {
     position: relative;
 }
 
-nav {
+.nav {
     z-index: 1;
     position: absolute;
     left: -1600px;
+    /*hide menu*/
+    width: 100%;
+    height: calc(100vh - 110px);
+}
+
+.nav--active {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
     /*hide menu*/
     width: 100%;
     height: calc(100vh - 110px);
@@ -135,8 +144,6 @@ nav {
     color: var(--DarkGray);
 }
 
-
-
 .button__left {
     z-index: 2;
     position: absolute;
@@ -221,7 +228,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-    nav {
+    .nav {
         z-index: 2;
         position: absolute;
         left: 0;
