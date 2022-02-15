@@ -250,6 +250,7 @@ header {
         width: 43%;
         background-color: transparent;
         margin-left: 110px;
+        transition: .25s
     }
 
     .menu__list--itens {
@@ -287,6 +288,7 @@ header {
         margin-right: -90%;
         transform: translate(-90%);
         top: 44px;
+        transition: .25s
     }
 }
 
@@ -367,20 +369,21 @@ header {
         left: 15%;
         margin-right: -85%;
         transform: translate(-85%);
+        transition: .25s
     }
 
     .menu__list {
         width: 27%;
-        background-color: transparent;
         margin-left: 110px;
+        transition: .25s
     }
 }
 
 @media screen and (min-width: 1200px) {
     .menu__list {
         width: 23%;
-        background-color: transparent;
         margin-left: 150px;
+        transition: .25s
     }
 
     .container {
