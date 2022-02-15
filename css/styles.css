@@ -175,6 +175,7 @@ nav {
     display: block;
     box-sizing: border-box;
     min-height: 240px;
+    max-height: 350px;
     width: 100%;
     background-image: url(../images/image-about-dark.jpg);
     background-size: 100% 240px;
@@ -202,6 +203,10 @@ nav {
 @media screen and (min-width: 576px) {
     .main-picture {
         background-image: url(../images/desktop-image-hero-1.jpg);
+    }
+
+    .container {
+        padding: 130px 20px 15px 25px;
     }
 }
 
@@ -286,6 +291,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
     .picture__about {
